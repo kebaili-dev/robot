@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot</title>
+</head>
+<body>
+    <h1>Robot</h1>
+    
+    <!-- Affichage -->
+    <p>Salut humain, je suis  <?= $robotName ?></p>
+    <p>Nous sommes le  <?= $date?>, il est <?= $heure  ?></p>
+    <p>
+        J'ai choisi le nombre <?= $randomNumber ?>.
+        <?php if (/* ! ($randomNumber & 1) */ $randomNumber % 2 == 0): ?>
+            C'est un nombre pair.
+        <?php else: ?>
+            C'est un nombre impair.
+        <?php endif ?>
+    </p>
+    <p>Mon nom à l'envers s'écrit <?= $reverseRobotName ?>. Ah. Ah. Ah.</p>
+    <p>
+        <?php if ($random < 3): ?>
+            Vous voulez un café ?
+        <?php else: ?>
+            Extermination ! Extermination !
+        <?php endif ?>
+    </p>
+    
+    
+</body>
+</html>
